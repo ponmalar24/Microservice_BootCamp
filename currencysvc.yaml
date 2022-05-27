@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: currencysvc
+spec:
+  selector:
+    app: currency
+  ports:
+  - port: 80
+    targetPort: 8080
